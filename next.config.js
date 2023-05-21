@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ['underarmour.scene7.com', 'store.storeimages.cdn-apple.com'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

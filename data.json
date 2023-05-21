@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "Black-buddha-bracelet",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/black-buddha-bracelet.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Blue-T-Shirt",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/blue-t-shirt.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bright-Red-Purse-With-Gold",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/bright-red-purse-with-gold.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Color-Geometric-Socks",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/color-geometric-socks.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Modern-Time-Pieces",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/modern-time-pieces.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Pink-Fitness-Tracker",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/pink-fitness-tracker.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Polka-Dot-Summer-Dress",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/polka-dot-summer-dress.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Red-LED-Shoes",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/red-LED-shoes.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Shiny-Black-Cocktail-Dress",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/shiny-black-cocktail-dress.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Swim-Shorts",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/swim-shorts.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Wireless-Headphones",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab itaque illo corporis voluptatum cumque ut esse, saepe repellat. Fuga, placeat. Praesentium, dignissimos aliquam alias dolorum et, qui vitae, culpa assumenda harum animi fuga magni provident. Quidem voluptatum id molestiae.",
+    "price": 100,
+    "image": "/wireless-headphones.jpg"
+  }
+]
