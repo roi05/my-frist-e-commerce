@@ -16,13 +16,12 @@ export default function Product({
 }: ProductProps) {
   return (
     <div className='rounded overflow-hidden shadow-lg'>
-      <div className='w-5/6 mx-auto'>
+      <div className='w-5/6 mx-auto relative h-64'>
         <Image
-          width={500}
-          height={500}
           className='object-contain'
           src={image}
           alt={name}
+          fill={true}
         />
       </div>
       <div className='px-6 py-4'>
