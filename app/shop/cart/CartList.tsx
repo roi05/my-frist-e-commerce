@@ -45,6 +45,10 @@ export default function CartList() {
     setAddToCart(newData);
   };
 
+  if (addToCart.length <= 0) {
+    return <h1 className='text-2xl font-bold text-center'>No item</h1>;
+  }
+
   return (
     <>
       {addToCart.map(item => {
