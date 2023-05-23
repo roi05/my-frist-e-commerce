@@ -5,7 +5,7 @@ import { addDecimal } from '@/utils/addDecimal';
 import Link from 'next/link';
 
 export default function CartAmount() {
-  const { addToCart } = useCart();
+  const { addToCart, setAddToCart } = useCart();
 
   const totalAmount = addToCart.reduce((accumulator, item) => {
     const itemTotal = (item.quantity ?? 0) * item.price;
@@ -17,7 +17,7 @@ export default function CartAmount() {
   }
 
   return (
-    <>
+    <div className='bg-slate-100 rounded-md p-2 '>
       <h1 className='text-xl text-center'>Total Amount</h1>
 
       {addToCart.map(item => {
@@ -35,10 +35,12 @@ export default function CartAmount() {
       <hr className='border-b-2 mb-2' />
       <h1 className='text-2xl text-center '>₱{addDecimal(totalAmount)}</h1>
       <Link href='/congratulations'>
-        <button className='mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded'>
+        <button className='mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded'
+        onClick={() => setAddToCart([])}
+        >
           Checkout
         </button>
       </Link>
-    </>
+    </div>
   );
 }

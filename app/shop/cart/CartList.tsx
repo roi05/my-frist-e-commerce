@@ -56,22 +56,28 @@ export default function CartList() {
         return (
           <div
             key={item.id}
-            className='grid grid-cols-12 gap-x-4 mb-7 bg-slate-50 p-2'>
-            <div className='col-span-3'>
-              <Image
-                src={item.image}
-                width={250}
-                height={250}
-                alt={item.name}
-              />
-            </div>
-            <div className='col-span-8'>
-              <h1 className='text-xl font-bold'>{item.name}</h1>
-              <p className='text-xs'>{item.desc}</p>
-              <p className='my-2'>₱{addDecimal(item.price)}</p>
+            className='bg-slate-100 rounded-md p-2 mb-3'>
 
-              <div className='my-2'>
-                <div className='flex items-center gap-4'>
+
+            <div className='sm:grid  gap-1 sm:grid-cols-3 sm:justify-center items-center'>
+              <div className='relative h-36  sm:col-span-1 flex justify-center items-center'>
+                <Image
+                  src={item.image}
+                  fill
+                  alt={item.name}
+                  className='rounded-lg object-contain'
+                />
+              </div>
+              <div className='sm:col-span-2  sm:text-left'>
+                <h1 className='text-xl font-bold'>{item.name}</h1>
+                <p className='text-xs'>{item.desc}</p>
+              </div>
+            </div>
+
+            <div className='grid grid-cols-2 gap-4 justify-center items-center my-2'>
+              <p className='my-2 text-center'>₱{addDecimal(item.price)}</p>
+              <div className='flex items-center justify-center'>
+                <div className='flex items-center gap-1'>
                   <AiOutlineMinus
                     className='cursor-pointer'
                     onClick={() => subtractQuantity(item.id)}
@@ -79,7 +85,8 @@ export default function CartList() {
                   <input
                     type='number'
                     value={item.quantity}
-                    className='w-12'
+                    className='w-12 text-center'
+                    readOnly
                   />
                   <AiOutlinePlus
                     className='cursor-pointer'
@@ -87,31 +94,24 @@ export default function CartList() {
                   />
                 </div>
               </div>
-
-              <div className='flex justify-around '>
-                <div>
-                  <p>
-                    Total amount:{' '}
-                    {addDecimal(
-                      item.quantity !== undefined
-                        ? item.price * item.quantity
-                        : 0
-                    )}
-                  </p>
-                </div>
-
-                <div>
-                  <button
-                    type='button'
-                    onClick={() => removeFromCart(item.id)}>
-                    <BsFillTrashFill
-                      color='red'
-                      size={25}
-                    />
-                  </button>
-                </div>
-              </div>
             </div>
+
+            <p className='my-2'>
+              Total amount:{' '}
+              {addDecimal(
+                item.quantity !== undefined ? item.price * item.quantity : 0
+              )}
+            </p>
+
+            <button
+              type='button'
+              onClick={() => removeFromCart(item.id)}
+              className='block mx-auto my-2'>
+              <BsFillTrashFill
+                color='red'
+                size={25}
+              />
+            </button>
           </div>
         );
       })}
