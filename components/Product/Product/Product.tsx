@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import AddToCartButton from '@/components/Product/Product/AddToCartButton';
+import { addDecimal } from '@/utils/addDecimal';
 
 type ProductProps = {
   product: {
@@ -30,7 +31,7 @@ export default function Product({
       </div>
       <div className='flex justify-between items-center px-6 py-4 mb-6'>
         <div className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2'>
-          ${price}
+          ₱{addDecimal(price)}
         </div>
         <div>
           <AddToCartButton

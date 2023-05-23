@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useCart } from '@/hooks/useAddToCart';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import { BsFillTrashFill } from 'react-icons/bs';
+import { addDecimal } from '@/utils/addDecimal';
 
 export default function CartList() {
   const { addToCart, setAddToCart } = useCart();
@@ -67,7 +68,7 @@ export default function CartList() {
             <div className='col-span-8'>
               <h1 className='text-xl font-bold'>{item.name}</h1>
               <p className='text-xs'>{item.desc}</p>
-              <p className='my-2'>₱{item.price}.00</p>
+              <p className='my-2'>₱{addDecimal(item.price)}</p>
 
               <div className='my-2'>
                 <div className='flex items-center gap-4'>
@@ -91,9 +92,11 @@ export default function CartList() {
                 <div>
                   <p>
                     Total amount:{' '}
-                    {item.quantity !== undefined
-                      ? item.price * item.quantity
-                      : 0}
+                    {addDecimal(
+                      item.quantity !== undefined
+                        ? item.price * item.quantity
+                        : 0
+                    )}
                   </p>
                 </div>
 
