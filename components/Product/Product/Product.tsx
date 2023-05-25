@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import AddToCartButton from '@/components/Product/Product/AddToCartButton';
 import { addDecimal } from '@/utils/addDecimal';
+import Link from 'next/link';
 
-type ProductProps = {
+export type ProductProps = {
   product: {
     id: number;
     name: string;
@@ -17,18 +18,20 @@ export default function Product({
 }: ProductProps) {
   return (
     <div className='rounded overflow-hidden shadow-lg'>
-      <div className='w-5/6 mx-auto relative h-64'>
-        <Image
-          className='object-contain'
-          src={image}
-          alt={name}
-          fill={true}
-        />
-      </div>
-      <div className='px-6 py-4'>
-        <div className='font-bold text-lg mb-3'>{name}</div>
-        <p className='text-gray-700 text-xs'>{desc.substring(0, 100)}</p>
-      </div>
+      <Link href={`/shop/${id}`}>
+        <div className='w-5/6 mx-auto relative h-64'>
+          <Image
+            className='object-contain'
+            src={image}
+            alt={name}
+            fill={true}
+          />
+        </div>
+        <div className='px-6 py-4'>
+          <div className='font-bold text-lg mb-3'>{name}</div>
+          <p className='text-gray-700 text-xs'>{desc.substring(0, 100)}</p>
+        </div>
+      </Link>
       <div className='flex justify-between items-center px-6 py-4 mb-6'>
         <div className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2'>
           ₱{addDecimal(price)}

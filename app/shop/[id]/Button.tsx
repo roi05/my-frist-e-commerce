@@ -1,6 +1,4 @@
 'use client';
-
-import { BsCartPlus } from 'react-icons/bs';
 import { useCart } from '@/hooks/useAddToCart';
 import { AddToCart } from '@/context/addToCart';
 
@@ -12,13 +10,7 @@ export type Props = {
   image: string;
 };
 
-export default function AddToCartButton({
-  id,
-  name,
-  desc,
-  price,
-  image,
-}: Props) {
+export default function Button({ id, name, desc, price, image }: Props) {
   const { addToCart, setAddToCart } = useCart();
 
   const addItemToCart = (item: number) => {
@@ -45,13 +37,12 @@ export default function AddToCartButton({
   };
 
   return (
-    <div
-      className='rounded-full p-5 hover:bg-slate-100'
-      onClick={() => addItemToCart(id)}>
-      <BsCartPlus
-        size={20}
-        className='cursor-pointer  '
-      />
-    </div>
+    <>
+      <button
+        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded'
+        onClick={() => addItemToCart(id)}>
+        Add to Cart
+      </button>
+    </>
   );
 }
